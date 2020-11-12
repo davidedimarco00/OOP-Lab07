@@ -15,5 +15,5 @@ public interface Acceptable<T> {
      * @return the acceptor
      */
     Acceptor<T> acceptor();
-
+    
 }
