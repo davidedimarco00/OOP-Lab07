@@ -23,7 +23,6 @@ public class AcceptableTest {
         /*
          * Correct acceptance of [10, 20, 30, 40]
          */
-    	
 	        final List<Integer> list = Arrays.asList(10, 20, 30, 40);
 	        /*
 	         * the following needs instantiation
@@ -32,11 +31,11 @@ public class AcceptableTest {
 	        final Acceptor<Integer> acceptor = acc.acceptor();
 	        
 	        try {
-		        for (final Integer el : list) {
-		            acceptor.accept(el);
-		        }
+	            for (final Integer el : list) {
+	                acceptor.accept(el);
 		        acceptor.end();
-	    	}catch (Exception e) { //se non genero eccezioni
+	            }
+	    	} catch (Exception e) { //se non genero eccezioni
 	    		System.out.println("Sequenza corretta");
 	    	}
     }

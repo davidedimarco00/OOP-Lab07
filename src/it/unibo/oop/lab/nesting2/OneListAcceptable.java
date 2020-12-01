@@ -22,7 +22,7 @@ public class OneListAcceptable<T> implements Acceptable<T> {
 			@Override
 			public void accept(final T newElement) throws Acceptor.ElementNotAcceptedException {
 				try {
-					if (newElement.equals(iterator.hasNext())) {
+					if (newElement.equals(iterator.next())) {
 						return;
 					}
 				}catch (Exception e) {
